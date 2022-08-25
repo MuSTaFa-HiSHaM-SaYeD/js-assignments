@@ -479,87 +479,88 @@
 // console.log(product);
 
 //////////////////////////////////////////////////////////////////////////////////////
-// DOM Challenge
+// // DOM Challenge
 
-document.body.style.backgroundColor = "rgb(245,245,245)";
+// document.body.style.backgroundColor = "rgb(245,245,245)";
 
-// create header
-let header = document.createElement("header");
+// // create header
+// let header = document.createElement("header");
 
-header.setAttribute("class", "website-head");
-header.style.cssText =
-  "padding:20px; background-color: white; align-items: center; justify-content: space-between; display:flex;";
+// header.setAttribute("class", "website-head");
+// header.style.cssText =
+//   "padding:20px; background-color: white; align-items: center; justify-content: space-between; display:flex;";
 
-  // create logo
-  let logo = document.createElement("div");
+//   // create logo
+//   let logo = document.createElement("div");
   
-  logo.setAttribute("class", "logo");
-  logo.textContent = "Elzero";
-  logo.title = "Website Logo";
-  logo.style.cssText =
-  "font-weight:bold; color: rgb(35,169,110); font-size:26px;";
+//   logo.setAttribute("class", "logo");
+//   logo.textContent = "Elzero";
+//   logo.title = "Website Logo";
+//   logo.style.cssText =
+//   "font-weight:bold; color: rgb(35,169,110); font-size:26px;";
   
-  header.appendChild(logo);
+//   header.appendChild(logo);
 
-  // create menu 
-  let menu = document.createElement("ul");
+//   // create menu 
+//   let menu = document.createElement("ul");
   
-  menu.className = "menu";
-  menu.style.cssText = 
-    "padding:0px; margin:0px; display:flex; list-style:none; ";
+//   menu.className = "menu";
+//   menu.style.cssText = 
+//     "padding:0px; margin:0px; display:flex; list-style:none; ";
   
-  // create menu items
-  arr = [" Home ", " About ", " Service ", " Contact "];
-  for (let i = 0; i < 4; i++) {
-    let li = document.createElement("li");
-    li.style.marginRight = "8px";
-    li.className = "li";
-    li.textContent = arr[i];
-    menu.appendChild(li);
-  }
+//   // create menu items
+//   arr = [" Home ", " About ", " Service ", " Contact "];
+//   for (let i = 0; i < 4; i++) {
+//     let li = document.createElement("li");
+//     li.style.marginRight = "8px";
+//     li.className = "li";
+//     li.textContent = arr[i];
+//     menu.appendChild(li);
+//   }
 
-  header.appendChild(menu);
+//   header.appendChild(menu);
 
 
-document.body.appendChild(header);
+// document.body.appendChild(header);
 
-// content
-let contentDiv = document.createElement("div");
-contentDiv.className = "content";
-contentDiv.style.cssText =
-  "display:flex; padding:20px; flex-wrap:wrap; justify-content:center; gap:20px; min-height:calc(100vh - 142pxx); box-sizing:border-box;";
+// // content
+// let contentDiv = document.createElement("div");
+// contentDiv.className = "content";
+// contentDiv.style.cssText =
+//   "display:flex; padding:20px; flex-wrap:wrap; justify-content:center; gap:20px; min-height:calc(100vh - 142pxx); box-sizing:border-box;";
 
-  // create products
-  for (let i = 0; i < 15; i++) {
-    let product = document.createElement("div");
-    product.className = "product";
-    product.style.cssText =
-      "padding:20px; background-color: rgb(255,255,255); border: 1px solid rgp(221,221,221); width: calc((100% - 40px) / 3); box-sizing: border-box; text-align: center; color:rgb(136,136,136); border-radius: 6px;";
+//   // create products
+//   for (let i = 0; i < 15; i++) {
+//     let product = document.createElement("div");
+//     product.className = "product";
+//     product.style.cssText =
+//       "padding:20px; background-color: rgb(255,255,255); border: 1px solid rgp(221,221,221); width: calc((100% - 40px) / 3); box-sizing: border-box; text-align: center; color:rgb(136,136,136); border-radius: 6px;";
     
       
-    let numSpan = document.createElement("span");
-    numSpan.style.cssText =
-    "font-size:40px; color:black; font-weight:normal; display: block; margin-bottom:10px; margin-top:10px;";
+//     let numSpan = document.createElement("span");
+//     numSpan.style.cssText =
+//     "font-size:40px; color:black; font-weight:normal; display: block; margin-bottom:10px; margin-top:10px;";
 
-    let productNum = document.createTextNode(`${i + 1}`);
-    numSpan.appendChild(productNum);
+//     let productNum = document.createTextNode(`${i + 1}`);
+//     numSpan.appendChild(productNum);
   
-    let productName = document.createTextNode(`Product`);
+//     let productName = document.createTextNode(`Product`);
   
-    product.appendChild(numSpan);
-    product.appendChild(document.createElement("br"));
-    product.appendChild(productName);
+//     product.appendChild(numSpan);
+//     product.appendChild(document.createElement("br"));
+//     product.appendChild(productName);
   
-    contentDiv.appendChild(product);
-  }
+//     contentDiv.appendChild(product);
+//   }
 
-document.body.appendChild(contentDiv);
+// document.body.appendChild(contentDiv);
 
-// footer
-let footer = document.createElement("footer");
-footer.className = "footer";
-footer.style.cssText =
-  "background-color: rgb(35,169,110); font-size:26px; text-align: center; padding: 20px; color:white;";
-footer.textContent = "Copyright 2022";
+// // footer
+// let footer = document.createElement("footer");
+// footer.className = "footer";
+// footer.style.cssText =
+//   "background-color: rgb(35,169,110); font-size:26px; text-align: center; padding: 20px; color:white;";
+// footer.textContent = "Copyright 2022";
 
-document.body.appendChild(footer);
+// document.body.appendChild(footer);
+
