@@ -1,1 +1,1 @@
-# js-assignments
+# El-Zero JS Bootcamp Assignments Solutions
